@@ -17,12 +17,12 @@
                     <h1 class="contact-form-heading">Reach <span>Out</span></h1>
                     <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
                     <label for="name">Full Name</label>
-                    <input class="contact-input" type="text" placeholder="Daniel Radcliffe" />
+                    <input class="contact-input" aria-labelledby="name" type="text" required aria-required="true" placeholder="Daniel Radcliffe" />
                     <label for="email">Email</label>
-                    <input class="contact-input" type="text" placeholder="da.real.harry@gmail.com" />
+                    <input class="contact-input" type="text" aria-labelledby="email" required aria-required="true" placeholder="da.real.harry@gmail.com" />
                     <label for="message">Message</label>
-                    <textarea class="contact-textarea" rows="4" cols="50" placeholder="Your message..."></textarea>
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send Message 🎉</button>
+                    <textarea class="contact-textarea" rows="4" cols="50" aria-labelledby="message" required aria-required="true" placeholder="Your message..."></textarea>
+                    <button class="contact-submit-button" type="button" onclick="submitForm()" aria-label="Submit">Send Message 🎉</button>
                 </form>
                 <img class="contact-image" src="images/connect.png" alt="A robot hand and a human hand"/>
             </div>
